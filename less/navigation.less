@@ -1,1 +1,35 @@
-// Navigation Styles here
+.navigation-content {
+    width:100%;
+    color: @shark;
+    border-bottom: 2px dashed @navigation-border;
+    padding: 2% 19% 2% 19%;
+    display:flex;
+    justify-content: space-between;
+    nav {
+        display: flex;
+        width: 40%;
+        justify-content: space-between;
+        align-items: center;
+     
+    a {
+        text-decoration: none;
+        color: @shark;
+        font-size: 1.6rem;
+
+        &:hover {
+            color:@silver;
+        }//hover
+    }//a
+    }//nav
+
+    @media @mobile {
+        padding: 2% 5% 2% 5%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        nav{
+            margin: 3% 0 0 0;
+            width: 100%;
+        }
+    }
+}//navigation-content
